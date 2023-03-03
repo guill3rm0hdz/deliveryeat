@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"><![endif]-->
+<html lang="es">
+  <head>
+    <!-- Creado por Guillermo Hernandez Alvarado -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Aqui estan la importacion de los archivos css para darle estilo a la pagina -->
+    <link href="/css/styles.css" rel="stylesheet" type="text/css" >
+    <link href="/css/normalize.css" rel="stylesheet" type="text/css">
+    
+    <title>Mi página web</title>
+  </head>
+  <body>
+    <!-- Este es el elemento del encabezado que contiene el logo y menu de la parte superior --> 
+    <header>        
+        <!-- Este es la barra de Navegacion --> 
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="/assets/LogoDeliveryEat-64x64.png" alt="Logo"></a>
+                <!-- Este es el Boton de menu Hamburguesa -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Contenido del menú -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                      <li class="nav-item active">
+                      <a class="nav-link" href="#">Inicio <span class="sr-only"></span></a>
+                      </li>
+                      <li class="nav-item">
+                      <a class="nav-link" href="#brands">Marcas</a>
+                      </li>
+                      <li class="nav-item">
+                      <a class="nav-link" href="#description">Descripcion</a>
+                      </li>
+                      <li class="nav-item">
+                      <a class="nav-link" href="#how-does">Como Funciona</a>
+                      </li>
+                  </ul>
+                </div>
+            </div>
+        </nav>  
+      </header>
+
+    <!-- Esta es la seccion del hero con un componente carrusel de imagenes -->
+    <section id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- Este es el primer componente dentro del carrusel y se inicializa como activo -->
+        <div class="carousel-item active">
+          <img src="/assets/section/hero-clienta-feliz.jpg" class="d-block w-100" alt="Clienta feliz">
+          <!-- Tarjeta que contiene la informacion que muestra el carrousel -->
+          <div class="carousel-caption d-md-block">
+            <h1>Entrega hata tu puerta</h1>
+            <p>Expertos en garantizar que los pedidos se entregan rápidamente</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Ordena >>
+            </button>
+          </div>          
+        </div>
+        <!-- Este es el segundo componente dentro del carrusel-->
+        <div class="carousel-item">
+          <img src="/assets/section/hero-entrega-producto.jpg" class="d-block w-100" alt="Entrega producto">
+          <!-- Tarjeta que contiene la informacion que muestra el carrousel -->
+          <div class="carousel-caption d-md-block">
+            <h1>Entrega express</h1>
+            <p>Encuentra una gran variedad de las mejores tiendas</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Pide tu Ahora >>
+          </button>
+          </div>              
+        </div>
+        <!-- Este es el tercer componente dentro del carrusel -->
+        <div class="carousel-item">
+          <img src="/assets/section/hero-cliente-feliz.jpg" class="d-block w-100" alt="Cliente feliz">
+          <!-- Tarjeta que contiene la informacion que muestra el carrousel -->
+          <div class="carousel-caption d-md-block">
+            <h1>Recibe tu super sin salir</h1>
+            <p>Pide fácil y rápido sin complicaciones</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Ordenar Ahora >>
+          </button>
+          </div>              
+        </div>
+      </div>
+      <!-- Boton para ir a una diapositiva anterior del carrousel -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <!-- Boton para ir a una diapositiva siguiente del carrousel -->
+      <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </section>
+
+    <!-- Esta es la seccion donde se muestran las imagenes de las marcas -->
+    <section id="brands">
+      <div class="container mt-5 mb-5">
+        <!-- Aqui se muestran las imagenes de las marcas de la fila supeior -->
+        <div class="row d-flex justify-content-evenly mb-3">
+          <div class="col-md-2 mb-2">
+            <div class="card">
+              <img src="assets/section/marca-ahorramas.png" alt="Marca 1" class="card-img-top" />
+            </div>
+          </div>
+          <div class="col-md-2 mb-2">
+            <div class="card">
+              <img src="assets/section/marca-carrefour.png" alt="Marca 2" class="card-img-top" />
+            </div>
+          </div>
+          <div class="col-md-2 mb-2">
+            <div class="card">
+              <img src="assets/section/marca-coviran.png" alt="Marca 3" class="card-img-top" />
+            </div>
+          </div>
+        </div>
+        <!-- Aqui se muestran las imagenes de las marcas de la fila inferior -->
+        <div class="row d-flex justify-content-evenly">
+          <div class="col-md-2 mb-2">
+            <div class="card">
+              <img src="assets/section/marca-elarbol.png" alt="Marca 1" class="card-img-top" />
+            </div>
+          </div>
+          <div class="col-md-2 mb-2">
+            <div class="card">
+              <img src="assets/section/marca-gigante.png" alt="Marca 2" class="card-img-top" />
+            </div>
+          </div>       
+        </div>    
+      </div>
+    </section>
+    
+    <!-- Este es la primera llamada a la accion CTAen toda la pagina -->
+    <section class="cta-superior">
+      <div class="container cta">
+        <div class="row">
+          <!-- Titulo del CTA con bototn de llamada a la accion -->
+          <div class="col-lg-8 mx-auto text-center">
+            <h2>Pide desde tu dispositivo y sin instalaciones</h2>
+            <!-- Boton que al precionar muestra un formulacio como modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Pruebalo
+          </button>
+          </div>
+        </div>
+      </div>       
+    </section>
+    
+    <!-- Esta es la seccion de Descripcion -->
+    <section id="description" class="description" class="m-5 p-5">
+      <!-- Estas dosimagenes se muestran flotantes con en la seccion para darle un estilo -->
+      <img src="/assets/section/description-various-fruits.png" class="description-img-fruits" alt="Imagen">
+      <img src="/assets/section/description-various-vegetables.png" class="description-img-vegetables" alt="Imagen">
+      <!-- Esta es una tarjeta con imagen titulo y texto -->
+      <div class="container text-center">
+        <div class="row py-5 d-flex flex-md-row-reverse">
+          <div class="col-md-6">
+            <img src="/assets/section/description-eat-1.png" alt="Imagen">
+          </div>
+          <div class="col-md-6 p-5">
+            <div class="card shadow p-3 mb-5 bg-white rounded">
+              <div class="card-body">
+                <h2 class="card-title">Somos DeliveryEat</h2>
+                <p>Somos una AppWeb que actúa como plataforma de intermediación entre varios tipos de usuarios.</p>
+                <p>Dentro de la oferta de DeliveryEat se encuentran las opciones de supermercados más grandes de Latinoamérica y es un gusto poder ayudarte con las compras de tu hogar.</p>
+              </div>
+            </div>   
+          </div>
+        </div>
+      </div>
+      <!-- Esta es una tarjeta con imagen titulo y texto -->
+      <div class="container text-center">
+        <div class="row py-5">
+            <div class="col-md-6">
+              <img src="assets/section/description-eat-2.png" alt="Imagen">
+            </div>
+            <div class="col-md-6 p-5">
+              <div class="card shadow p-3 mb-5 d-flex bg-white rounded">
+                <div class="card-body">
+                  <h2 class="card-title">Ventajas de pedir en DeliveryEat</h2>
+                  <p>Contamos con variedad de opciones para vegetarianos, tiendas especializadas y supermercados, grandes cadenas, entre otros.</p>
+                  <!-- Lista con incisos en forma de circulos -->
+                  <ul style="list-style-type: circle; text-align: left;">
+                    <li>Tarjeta de Debito</li>
+                    <li>Tarjeta de Credito</li>
+                    <li>Efectivo</li>
+                  </ul>
+                </div>
+              </div>   
+            </div>
+        </div>       
+      </div>        
+    </section>
+
+    <!-- Este es la segunda llamada a la accion CTA en toda la pagina -->
+    <section class="cta-medio cta">
+      <div class="container">
+        <div class="row">
+          <!-- Titulo y descripcion del CTA con bototn de llamada a la accion -->
+          <div class="col-lg-8 mx-auto text-center">
+            <h2>Las mejores tiendas</h2>
+            <p>Cada vez son más las personas prefieren DeliveryEat, porque tenemos las mejores marcas en la tienda y tu pedido se entrega de forma segura y en el tiempo que tú dices.</p>
+            <!-- Boton que al precionar muestra un formulacio como modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Comprar Ahora 
+          </button>
+          </div>
+        </div>
+      </div>       
+    </section>
+
+    <!-- Esta es la seccion Como Funciona -->
+    <section id="how-does" class="container mb-5 mt-5">
+      <div class="row d-flex justify-content-around p-5 how-does trapezoid">
+        <!-- Columna izquierda donde muestra el titulo de la seccion -->
+        <div class="col-md-4 align-self-center p-5 how-does-head">
+          <h2>¡Tu súper está muy cerca!</h2>
+        </div>
+        <!-- Este div estan las dos tarjetas donde describe lo que hace el cliente y el repartidor -->
+        <div class="col-md-4">
+          <div class="card text-center rounded-4 mt-5">
+            <div class="card-body">
+              <img src="/assets/icon-delicius.png" alt="Descripción de la imagen" class="img-fluid rounded-circle mx-auto d-block" style="max-width: 128px;">
+              <h5 class="card-title">Tu</h5>
+              <p class="card-text">Introduce tus datos en el formulario con lo que quieres que te llevemos del super a tu casa.</p>
+            </div>
+          </div>
+          <div class="card text-center rounded-4 mt-5">
+            <div class="card-body ">
+              <img src="/assets/icon-delivery.png" alt="Descripción de la imagen" class="img-fluid rounded-circle mx-auto d-block" style="max-width: 128px;">
+              <h5 class="card-title">Repartidor</h5>
+              <p class="card-text">Uno de nuestros socios repartidores hará el mandado con tus productos y te lo llevará hasta la comodidad de tu hogar.</p>
+            </div>
+          </div>                
+        </div>
+        <!-- Este div esta la tarjeta que describe cuando se notifica al cliente -->
+        <div class="col-md-4 align-self-center">
+          <div class="card text-center rounded-4 mt-5">
+            <div class="card-body">
+              <img src="/assets/icon-notificacion.png" alt="Descripción de la imagen" class="img-fluid rounded-circle mx-auto d-block" style="max-width: 128px;">
+              <h5 class="card-title">Notificación</h5>
+              <p class="card-text">Te avisaremos con un mensaje que tu pedido está a punto de llegar.</p>
+            </div>
+          </div>     
+        </div>        
+      </div>
+    </section>
+
+    <!-- Este es la segunda llamada a la accion CTA en toda la pagina. Tambien contiene un formulario -->
+    <section class="cta-inferior">
+      <div class="container cta">
+        <div class="row">
+          <!-- Titulo y descripcion del CTA con bototn de llamada a la accion -->
+          <div class="col-lg-6 mx-auto text-center">
+            <h2>Sin instalaciones</h2>
+            <p>Hacer un pedido con Delivery Eat es muy fácil y lo mejor es que no necesitas instalar nada, todo desde la web</p>
+          </div>
+          <div class="col-lg-6 mx-auto text-center">
+            <!-- Formulario para mandar datos a un correo electronico -->
+            <form id="contact-form" name="contact-form" method="post" action="send-mail.php">
+              <!-- Grupo de elementos del formulario del nombre -->
+              <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+              </div>
+              <!-- Grupo de elementos del formulario del email -->
+              <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              <!-- Grupo de elementos del formulario del telefono -->
+              <div class="form-group">
+                <label for="phone">Teléfono</label>
+                <input type="tel" class="form-control" id="phone" name="phone" required>
+              </div>
+              <!-- Grupo de elementos del formulario de la Direccion -->
+              <div class="form-group">
+                <label for="address">Dirección</label>
+                <input type="text" class="form-control" id="address" name="address" required>
+              </div>
+              <!-- Boton para enviar el formulario -->
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>       
+          </div>          
+        </div>
+      </div>       
+    </section>
+ 
+    <!-- Este div esta oculto. Es el que muestra el formulario modal para cada boton de cta y del hero -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Título del modal</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+              <!-- Formulario para mandar datos a un correo electronico -->
+            <form id="contact-form" name="contact-form" method="post" action="send-mail.php">
+              <!-- Grupo de elementos del formulario del nombre -->
+              <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+              </div>
+              <!-- Grupo de elementos del formulario del email -->
+              <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              <!-- Grupo de elementos del formulario del telefono -->
+              <div class="form-group">
+                <label for="phone">Teléfono</label>
+                <input type="tel" class="form-control" id="phone" name="phone" required>
+              </div>
+              <!-- Grupo de elementos del formulario de la Direccion -->
+              <div class="form-group">
+                <label for="address">Dirección</label>
+                <input type="text" class="form-control" id="address" name="address" required>
+              </div>
+              <!-- Boton para enviar el formulario -->
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>        
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>   
+      <!-- Este es el elemento footer que es la parte final de toda la pagina --> 
+      <footer class="text-white">
+        <div class="container">
+          <div class="row">
+            <!-- Este componente contiene los datos de la empresa --> 
+            <div class="col-md-4">
+              <h5>Información de contacto</h5>
+              <p>Dirección: 3421 Constituyentes, Playa del Carmen, Quintana Roo, 77715</p>
+              <p>Teléfono: (813) 524-0943</p>
+              <p>Correo electrónico: contacto@deliveryeat.com</p>
+            </div>
+            <!-- Este componente contiene la parte legal de la pagina --> 
+            <div class="col-md-4">
+              <h5>Enlaces importantes</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Política de privacidad</a></li>
+                <li><a href="#">Aviso legal</a></li>
+              </ul>
+            </div>
+            <!-- Este componente contiene las redes sociales --> 
+            <div class="col-md-4">
+              <h5>Redes sociales</h5>
+              <ul class="list-unstyled">
+                <li><a href="#"><i class="bi bi-facebook"></i> Facebook</a></li>
+                <li><a href="#"><i class="bi bi-twitter"></i> Twitter</a></li>
+                <li><a href="#"><i class="bi bi-instagram"></i> Instagram</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <!-- Aqui estan la importacion de los archivos js(javascript) -->
+    <script src="/js/bootstrap.min.js"></script>
+   <script src="/js/script.js"></script>
+  </body>
+</html>

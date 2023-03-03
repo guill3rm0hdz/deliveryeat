@@ -1,0 +1,284 @@
+/* *************************************************** */
+/* Inicializa estos elementos con atributos especificos */
+    bady{font-family: 'Montserrat', sans-serif;}
+    p{font-family: 'Comic Sans MS', sans-serif;}
+
+    img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    h2 {
+        margin-top: 0;
+    }
+/* *************************************************** */
+    /* Cabia atributos del boton primario para que este con el estilo de la pagina */
+    .btn{
+        font-size: 1.5rem;
+    }
+
+    .btn-primary{
+        background-color: #E8B751 !important;
+        border: solid 2px white !important;
+        color: #361B10;
+        border: none;
+    }
+/* *************************************************** */
+    /* Estilo para Carousel y sus elementos */
+    #hero-carousel {
+        margin-top: 6rem;
+    }
+
+    #hero-carousel img {
+        height: 500px;
+        clip-path: polygon(50% 0%, 100% 0, 100% 60%, 100% 100%, 25% 93%, 0 93%, 0 0);
+        border-radius: 0 0 15px 15px;
+    }
+
+    .carousel-caption{
+        padding-bottom: 5rem;
+    }
+
+    .carousel-item {
+        height: 500px;
+    }
+
+    .carousel-item h1{
+        color: white;
+        font-size: 3.5rem;
+        
+    }
+
+    .carousel-item p{
+        color: white;
+        font-size: 2rem;
+        
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 5%;
+        opacity: 0.8;
+    }
+
+    .carousel-control-prev:hover,
+    .carousel-control-next:hover {
+        opacity: 1;
+    }
+
+/* *************************************************** */
+    /* Estilo para la seccion de Descripcion y sus elementos */
+    .description{
+        position: relative;
+        border: 1px solid #ccc;
+    }
+
+    .description h2 {
+        font-size: 2rem;
+        font-weight: bolder;
+        color: #85B026;
+        text-shadow: 0 0 5px #ffffff, 0 0 5px #ffffff;
+
+    }
+
+    .description p {
+        font-size: 1.5rem;
+        color: #361B10;;
+        text-shadow: 0 0 5px #ffffff, 0 0 5px #ffffff;
+    }
+
+    .description .description-img-fruits{
+        position: absolute;
+        top: 5%;
+        left: -25%;
+        max-width: 65%;
+        max-height: 65%;
+        z-index: -1;
+    }
+
+    .description .description-img-vegetables{
+        position: absolute;
+        top: 45%;
+        left: 65%;
+        max-width: 55%;
+        max-height: 55%;
+        z-index: -1;
+    }
+
+/* *************************************************** */
+    /* Estilo para la seccion de Como Funciona y sus elementos */
+    .how-does{
+        background-image: url("/assets/section/how-does-fruit.jpg");
+        background-size: cover;
+        background-position: center;   
+        border-radius: 25px;
+    }
+    
+    .how-does-head{
+        color: white;
+    }
+
+    .how-does-head h2{
+    font-size: 4rem;
+    }
+
+    .how-does-head p{
+        font-size:2rem;
+    } 
+
+/* *************************************************** */
+    /* Estilos CSS para las secciones sección CTA */
+    .cta-inferior {
+        background-size: cover;
+        background-position: center;
+        padding: 100px 0;
+        background-image: url("/assets/section/cta-lista.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .cta-medio {
+        background-size: cover;
+        background-position: center;
+        padding: 100px 0;
+        background-image: url("/assets/section/cta-duananegocio.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .cta-superior {
+        background-size: cover;
+        background-position: center;
+        padding: 100px 0;
+        background-image: url("/assets/section/cta-pide-desde-app.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .cta h2 {
+        font-size: 3rem;
+        color:#ffffff;
+        margin-bottom: 30px;
+    }
+
+    .cta p {
+        font-size: 2rem;
+        color:#ffffff;
+        margin-bottom: 30px;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+/* *************************************************** */
+    /* Estilos CSS para el formulario y sus validaciones*/
+    form {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .form-group input {
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    .form-group input:focus {
+        border-color: #007bff;
+    }
+
+/* *************************************************** */
+    /* Estilos para el pie de pagina (Footer) */
+    footer {
+        padding: 50px 0;
+        background-color: #361B10;
+    }
+
+    footer h5 {
+        color: #fff;
+        margin-bottom: 20px;
+    }
+
+    footer ul li {
+        margin-bottom: 10px;
+    }
+
+    footer ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    footer ul li a:hover {
+        color: #ffc107;
+    }
+
+/* *************************************************** */
+    /* Mediquery, cuando la pantalla llega a 767px se adapta cambiando los atributos */
+    @media (max-width: 767px) {
+        .carousel-item h1{
+            font-size: 3rem;
+
+        }
+
+        .carousel-item p{
+            font-size: 1.8rem;
+            
+        }  
+
+        .cta h2 {
+            font-size: 3rem;
+        }
+
+        .cta p {
+            font-size: 2rem;
+        }
+
+        footer {
+        padding: 30px 0;
+        }
+
+        footer h5 {
+        margin-top: 30px;
+        }
+
+
+        .description .description-img-fruits{
+            max-width: 85%;
+            max-height: 85%;
+        }
+        
+        .description .description-img-vegetables{
+            max-width: 73%;
+            max-height: 73%;
+        }
+    }    
+
+/* *************************************************** */
+    /* Mediquery, cuando la pantalla llega a 412px se adapta cambiando los atributos */
+    @media (max-width: 412px) {
+        #hero-carousel {
+            margin-top: 8rem;
+        }  
+    }  
+    
+/* *************************************************** */
+    /* Mediquery, cuando la pantalla llega a 380px se adapta cambiando los atributos */
+    @media (max-width: 380px) {
+        #hero-carousel {
+            margin-top: 5rem;
+        }  
+    }    
